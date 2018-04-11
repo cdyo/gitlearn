@@ -42,7 +42,7 @@ c1168af4c164006e01832bc022cba53969dbc7f1 (HEAD -> master) 20180411_3 commit
 #HEAD^^指上上个版本
 #HEAD~100指往上100个版本
 
-
+git reset --hard HEAD^ #回退到上个版本
 
 
 
