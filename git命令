@@ -9,6 +9,38 @@ git add git命令 #添加仓库文件
 git commit "20180411_2 commit" #再次提交
 
 版本回退
+git log #查看提交日志
+git log --pretty=oneline #减少输出
+########################################################
+$ git log
+commit c1168af4c164006e01832bc022cba53969dbc7f1 (HEAD -> master)
+Author: 016564 <chendeyong@bonc.com.cn>
+Date:   Wed Apr 11 19:41:09 2018 +0800
+
+    20180411_3 commit
+
+commit 15d13c95c4414ac81618a28e43d43754e9fadb15
+Author: 016564 <chendeyong@bonc.com.cn>
+Date:   Wed Apr 11 19:37:42 2018 +0800
+
+    20180411_2 commit
+
+commit 67388ba9f55a5288d4d2604976b52e7038a4125c
+Author: 016564 <chendeyong@bonc.com.cn>
+Date:   Wed Apr 11 19:32:00 2018 +0800
+
+    20180411_1 commit
+	
+$ git log --pretty=oneline
+c1168af4c164006e01832bc022cba53969dbc7f1 (HEAD -> master) 20180411_3 commit
+15d13c95c4414ac81618a28e43d43754e9fadb15 20180411_2 commit
+67388ba9f55a5288d4d2604976b52e7038a4125c 20180411_1 commit
+
+####################################################
+#用HEAD表示当前版本
+#HEAD^指上个版本
+#HEAD^^指上上个版本
+#HEAD~100指往上100个版本
 
 
 
