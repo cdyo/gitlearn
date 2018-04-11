@@ -44,6 +44,17 @@ c1168af4c164006e01832bc022cba53969dbc7f1 (HEAD -> master) 20180411_3 commit
 
 git reset --hard HEAD^ #回退到上个版本
 
+$ git reflog
+478e21f (HEAD -> master) HEAD@{0}: reset: moving to HEAD^
+37ee841 HEAD@{1}: commit: 20180411_5 commit
+478e21f (HEAD -> master) HEAD@{2}: commit: 20180411_4 commit
+c1168af HEAD@{3}: commit: 20180411_3 commit
+15d13c9 HEAD@{4}: commit: 20180411_2 commit
+67388ba HEAD@{5}: commit (initial): 20180411_1 commit
+
+#回退到源版本
+$ git reset --hard 37ee841
+HEAD is now at 37ee841 20180411_5 commit
 
 
 
