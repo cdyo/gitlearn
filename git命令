@@ -5,9 +5,10 @@ git commit -m "20180411_1 commit "  #把文件提交到仓库
 git status #查看仓库状态，文件是否修改
 git diff git命令 #查看修改
 
+git add git命令 #添加仓库文件
+git commit "20180411_2 commit" #再次提交
 
-
-
+版本回退
 
 
 
