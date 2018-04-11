@@ -1,6 +1,9 @@
 git init  #初始化仓库
 git add git命令 #向git仓库添加文件
+git commit -m "20180411_1 commit "  #把文件提交到仓库
 
+git status #查看仓库状态，文件是否修改
+git diff git命令 #查看修改
 
 
 
