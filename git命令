@@ -1,0 +1,20 @@
+git init  #初始化仓库
+git add git命令 #向git仓库添加文件
+
+
+
+
+
+
+
+
+
+
+
+
+echo "# gitlearn" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/cdyo/gitlearn.git
+git push -u origin master
