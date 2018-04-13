@@ -56,6 +56,19 @@ c1168af HEAD@{3}: commit: 20180411_3 commit
 $ git reset --hard 37ee841
 HEAD is now at 37ee841 20180411_5 commit
 
+#概念
+当前目录既为工作区
+工作区有隐藏文件夹 ./.git ，不算工作区是Git的版本库。
+https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013745374151782eb658c5a5ca454eaa451661275886c6000
+
+
+
+
+
+
+
+
+
 
 
 
