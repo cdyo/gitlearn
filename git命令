@@ -69,12 +69,29 @@ git checkout  -- git命令
 
 作用：
 1.修改了git命令 文件但是没有提交到暂存区（add）撤回工作区的修改
-2.好想没有撤销修改//注意客户端保存
+2.当工作区修改已经add提交到暂存区，可以git reset HEAD git命令 可以把暂存区的修改清理
+再执行git checkout -- git命令 即可撤销工作区的修改。
 
 
+###################################################
+添加远程库：
+git remote add origin https://github.com/cdyo/gitlearn.git   #origin就是远程库的名字
+$ git push -u origin master
+#推送到远程库加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来
+此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
 
-
-
+fatal: HttpRequestException encountered.
+   ▒▒▒▒▒▒▒▒ʱ▒▒▒▒
+Username for 'https://github.com': 946992032@qq.com
+Counting objects: 27, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (27/27), 3.10 KiB | 793.00 KiB/s, done.
+Total 27 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), done.
+To https://github.com/cdyo/gitlearn.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
 
 
 
@@ -85,5 +102,11 @@ echo "# gitlearn" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
-git remote add origin https://github.com/cdyo/gitlearn.git
+
 git push -u origin master
+
+
+
+
+
+
